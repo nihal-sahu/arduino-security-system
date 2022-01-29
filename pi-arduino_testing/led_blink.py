@@ -6,8 +6,10 @@ import time
 
 if __name__ == '__main__':
     board = pyfirmata.Arduino('/dev/ttyUSB0')
+    board.digital[13].mode = pyfirmata.OUTPUT
     print("Communication Successfully started")
     
+
     while True:
         board.digital[13].write(1)
         time.sleep(1)
