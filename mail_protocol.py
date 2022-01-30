@@ -2,7 +2,7 @@ import time
 import smtplib
 import ssl
 
-def alert_email(receiver = "nihalsahu2003@gmail.com"):
+def alert_email(receiver = "youremail@gmail.com"):
     # receiver needs to be passed in the beginning but we can pass a default parameter for now 
     port = 465 
     smtp_server = "smtp.gmail.com"
