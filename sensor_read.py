@@ -4,8 +4,8 @@ from pymata4 import pymata4
 import mail_protocol
 
 board = pymata4.Pymata4()
-triggerPin = 10
-echoPin = 11
+triggerPin = 12
+echoPin = 13
 
 def get_distance():
     board.set_pin_mode_sonar(triggerPin, echoPin)
