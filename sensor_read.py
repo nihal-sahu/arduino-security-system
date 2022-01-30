@@ -43,8 +43,8 @@ def get_distance():
         print(board.sonar_read(triggerPin)[0], "cm")
         currentTime = time.time()
 
-        #condition only executes for first 15 seconds of program execution
-        if (currentTime - startTime < 15):
+        #condition only executes for first 10 seconds of program execution
+        if (currentTime - startTime < 10):
             if (board.sonar_read(triggerPin)[0] > max_distance):
                 max_distance = board.sonar_read(triggerPin)[0]
             currentTime = time.time()
@@ -61,7 +61,7 @@ def get_distance():
             currentTime2 = time.time()
         elif (emailNotif == False):
             yellow()
-            if (currentTime2 - startTime2 > 15):
+            if (currentTime2 - startTime2 > 10):
                 emailNotif = True
                 green()
             currentTime2 = time.time()
