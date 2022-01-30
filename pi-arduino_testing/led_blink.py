@@ -1,18 +1,27 @@
-#THE FOLLOWING TEST CODE IS FROM https://roboticsbackend.com/control-arduino-with-python-and-pyfirmata-from-raspberry-pi/
-#!/usr/bin/env python3
-
-import pyfirmata
+import sys
 import time
 
-if __name__ == '__main__':
-    board = pyfirmata.Arduino('/dev/ttyUSB0')
-    board.digital[13].mode = pyfirmata.OUTPUT
-    print("Communication Successfully started")
-    
+from pymata4 import pymata4
 
+DIGITAL_PIN = 13  # arduino pin number
+
+
+def blink(my_board, pin):
+ 
+    # set the pin mode
+    my_board.set_pin_mode_digital_output(pin)
+    my_board.digital_write(pin, 1)
+
+    # toggle the pin 4 times and exit
     while True:
-        board.digital[13].write(1)
+        print('ON')
+        my_board.digital_write(pin, 1)
         time.sleep(1)
-        board.digital[13].write(0)
+        print('OFF')
+        my_board.digital_write(pin, 0)
         time.sleep(1)
-    
+
+
+board = pymata4.Pymata4()
+
+blink(board, DIGITAL_PIN)
