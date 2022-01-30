@@ -1,8 +1,8 @@
 ## Smart Arduino/Raspberry Pi Home System for HoyaHacks 2022
 
-# Step 1. Installing FirmataExpress to Arduino board(pymata4)
-    <br> - credits to Alan Yorinks for the library
-    <br> - library repo can be found here: https://github.com/MrYsLab/pymata4
+# Step 1. Installing FirmataExpress to Arduino board (pymata4)
+     - credits to Alan Yorinks for the library
+     - library repo can be found here: https://github.com/MrYsLab/pymata4
 
 # Step 2. Download .zip file of repository main branch
 
