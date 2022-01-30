@@ -1,4 +1,4 @@
-# Smart Arduino/Raspberry Pi Home System for HoyaHacks 2022
+# Smart Arduino Home Security System for HoyaHacks 2022
 
 ## Step 1. Installing FirmataExpress to Arduino board (pymata4)
      - credits to Alan Yorinks for the library
