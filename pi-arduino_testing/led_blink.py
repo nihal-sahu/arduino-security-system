@@ -6,6 +6,7 @@ from pymata4 import pymata4
 DIGITAL_PIN = 13  # arduino pin number
 
 
+
 def blink(my_board, pin):
  
     # set the pin mode
@@ -23,5 +24,6 @@ def blink(my_board, pin):
 
 
 board = pymata4.Pymata4()
+print("The pymata4 library can be found at https://github.com/MrYsLab/pymata4\nThe following code was developed by Nihal Sahu and Nishan Sivakumar\n")
 
 blink(board, DIGITAL_PIN)
