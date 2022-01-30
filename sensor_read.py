@@ -25,7 +25,7 @@ def get_distance():
                 max_distance = board.sonar_read(triggerPin)[0]
             currentTime = time.time()
 
-        elif ((max_distance - board.sonar_read(triggerPin)[0] >= 25) and emailNotif == True):
+        elif ((max_distance - board.sonar_read(triggerPin)[0] >= 30) and emailNotif == True):
             print("MOVEMENT DETECTED. ALERT SENT.")
             mail_protocol.alert_email()
             emailNotif = False
@@ -34,7 +34,7 @@ def get_distance():
         
         elif (emailNotif == False):
             if (currentTime - startTime < 25):
-                emailNotif = true
+                emailNotif = True
             currentTime = time.time()
             
 print("The pymata4 library can be found at https://github.com/MrYsLab/pymata4 \nThe following code was developed by Nihal Sahu and Nishan Sivakumar\n")
