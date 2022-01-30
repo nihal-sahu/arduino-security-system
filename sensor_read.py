@@ -52,7 +52,7 @@ def get_distance():
             green()
 
         if ((max_distance - board.sonar_read(triggerPin)[0] >= 30) and emailNotif == True):
-            print("MOVEMENT DETECTED. ALERT SENT.")
+            print("MOVEMENT DETECTED. ALERT SENDING...")
             red()
             time.sleep(3)
             mail_protocol.alert_email()
