@@ -9,7 +9,7 @@ def alert_email(receiver = ""):
     sender = "alert6273@gmail.com"
     password = "1234%^&*ASdf"
     receiving_email = receiver
-    message = """Subject: Sensors Triggered!!"""
+    message = """Subject: Sensors Triggered!"""
 
     #send mail protocol 
     context = ssl.create_default_context()
