@@ -13,4 +13,4 @@
     chmod +x sensor_read.py
     python3 sensor_read.py
 
-## Step 4. Stay safe friends and make sure no one is going into your stuff!
+## Step 4. Stay safe friends, and make sure no one is going into your stuff!
