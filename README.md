@@ -10,7 +10,7 @@ Smart Arduino Home Security System is exactly what it sounds like. It's a portab
 We used PyFirmata libraries to interface between the Pi and Arduino, and an ultrasonic ranging module as the sensor. The sensor takes a few seconds to calibrate the distance between itself and the nearest wall, and reports and irregularities it finds while it is running. 
 
 ## How to set up:
-### Step 1. Installing FirmataExpress to Arduino board (pymata4)
+### Step 1. Flash FirmataExpress to Arduino board with Arduino IDE (pymata4)
 ### Step 2. Download .zip file of repository main branch
 ### Step 3. Insert receiver email, and sender email and password into mail_protocol.py (this is needed to send the alerts) 
 (don't worry, the password in the repo is just a dummy password)
